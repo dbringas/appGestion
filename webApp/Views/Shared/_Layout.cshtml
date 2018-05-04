@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="@Url.Content("~/faviconGear.ico")" />
+
+    <title>PROWARE | @ViewBag.Title</title>
+
+    @if (IsSectionDefined("Styles"))
+    {
+        @RenderSection("Styles", required: false)
+    }
+
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/font-awesome/css")
+    @Styles.Render("~/Content/confirmacion")
+    @Styles.Render("~/Content/jqwidgets")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqwidgets")
+
+    @*@Html.Action("MenuDinamico", "Home", new { Area = "" })*@
+</head>
+<body>
+    <!-- Wrapper-->
+    <div id="wrapper">
+        <!-- Navigation -->
+        @*@Html.Partial("_Navigation")*@
+        @{ Html.RenderAction("_Navigation", "Home", new { Area = "" });}
+        <!-- Page wraper -->
+        <div id="page-wrapper" class="gray-bg">
+            <!-- Top Navbar -->
+            @Html.Partial("_TopNavbar")
+            <!-- Main view  -->
+            @RenderBody()
+            <!-- Footer -->
+            @Html.Partial("_Footer")
+        </div>
+        <!-- End page wrapper-->
+    </div>
+    <!-- End wrapper-->
+
+    <div id="tablaexport" style="display: none"></div>
+
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/confirmacion")
+    @Scripts.Render("~/plugins/metsiMenu")
+    @Scripts.Render("~/plugins/pace")
+    @Scripts.Render("~/plugins/slimScroll")
+    @Scripts.Render("~/bundles/inspinia")
+    @Scripts.Render("~/plugins/date")
+    @Scripts.Render("~/plugins/table2excel")
+    @Scripts.Render("~/bundles/custom")
+
+    <!-- Handler for local scripts -->
+    @RenderSection("scripts", required: false)
+</body>
+</html>

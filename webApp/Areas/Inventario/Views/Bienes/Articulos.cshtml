@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "Artículos";
+}
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>@ViewBag.Title</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="@Url.Action("Index", "Home", new { Area = "" })">Inicio</a>
+            </li>
+            <li>
+                <a>Inventario</a>
+            </li>
+            <li class="active">
+                <strong>Artículos</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Catálogo de artículos <small></small></h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <p>
+                                <button class="btn btn-white" type="button"><i class="fa fa-ban"></i>&nbsp;&nbsp;Cancelar</button>
+                                <button class="btn btn-primary" type="button"><i class="fa fa-save"></i>&nbsp;&nbsp;Guardar cambios</button>
+                            </p>
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
+                            <div class="form-group">
+                                <label>Número de parte</label>
+                                <input type="text" placeholder="" class="ctrlInput" id="txtNroParte" />
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                            <div class="form-group">
+                                <label>¿Habilitado?</label>
+                                <div id="chkEstado" class="ctrlCheckbox">&nbsp;[Si / No]</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Nomenclatura</label>
+                                <input type="text" placeholder="" class="ctrlInput" id="txtNomenclatura" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Grupo de artículo</label>
+                                <div id="cboGrupo" class="ctrlDropDown"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Unidad de medida</label>
+                                <div id="cboUnidad" class="ctrlDropDown"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

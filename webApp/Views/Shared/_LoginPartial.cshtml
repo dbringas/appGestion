@@ -1,0 +1,16 @@
+﻿@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("CerrarSesion", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <ul class="nav navbar-top-links navbar-right">
+            <li>Bienvenido(a) @User.Identity.Name </li>
+            <li><a href="javascript:document.getElementById('logoutForm').submit()"><i class="fa fa-sign-out"></i> Cerrar Sesión</a></li>
+        </ul>
+    }
+}
+else
+{
+    //Html.Action("CerrarSesion", "Account");
+}

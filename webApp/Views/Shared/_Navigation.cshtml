@@ -1,0 +1,47 @@
+﻿@model IEnumerable<webApp.Models.MenuViewModels>
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">Portal Virtual</strong>
+                            </span> <span class="text-muted text-xs block">Ver opciones <b class="caret"></b></span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a href="@Url.Action("Perfil", "Credenciales", new { Area = "Seguridad" })">Ver perfil</a></li>
+                        <li><a href="@Url.Action("Cambiar", "Credenciales", new { Area = "Seguridad" })">Cambiar contraseña</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    SGA
+                </div>
+            </li>
+            @if (Model != null)
+            {
+                foreach (var fila in Model.Where(s => s.padre == "-1").ToList())
+                {
+                    if (fila.hijos == 0)
+                    {
+                        <li><a href="@Url.Action(fila.vista, fila.controlador, new { Area = fila.area })"><i class="@fila.icono"></i> <span class="nav-label">@fila.nombre</span> </a></li>
+                    }
+                    else
+                    {
+                        <li>
+                            <a href="#"><i class="@fila.icono"></i> <span class="nav-label" data-i18n="nav.dashboard">@fila.nombre</span> <span class="fa arrow"></span></a><ul class="nav nav-second-level collapse">
+                                @foreach (var subfila in Model.Where(s => s.padre == fila.id).ToList())
+                                {
+                                    <li><a href="@Url.Action(subfila.vista, subfila.controlador, new { Area = subfila.area })">@subfila.nombre</a></li>
+                                }
+                            </ul>
+                        </li>
+                    }
+                }
+            }
+        </ul>
+    </div>
+</nav>

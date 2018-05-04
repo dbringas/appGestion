@@ -1,0 +1,31 @@
+D:\Descargas\Codigo fuente\appGestionAero\BL\bin\Debug\BL.dll
+D:\Descargas\Codigo fuente\appGestionAero\BL\bin\Debug\BL.pdb
+D:\Descargas\Codigo fuente\appGestionAero\BL\bin\Debug\BE.dll
+D:\Descargas\Codigo fuente\appGestionAero\BL\bin\Debug\DA.dll
+D:\Descargas\Codigo fuente\appGestionAero\BL\bin\Debug\BE.pdb
+D:\Descargas\Codigo fuente\appGestionAero\BL\bin\Debug\DA.pdb
+D:\Descargas\Codigo fuente\appGestionAero\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+D:\Descargas\Codigo fuente\appGestionAero\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+D:\Descargas\Codigo fuente\appGestionAero\BL\obj\Debug\BL.csproj.CopyComplete
+D:\Descargas\Codigo fuente\appGestionAero\BL\obj\Debug\BL.dll
+D:\Descargas\Codigo fuente\appGestionAero\BL\obj\Debug\BL.pdb
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestionAero\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestionAero\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestionAero\BL\bin\Debug\BL.dll
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestionAero\BL\bin\Debug\BL.pdb
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestionAero\BL\bin\Debug\BE.dll
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestionAero\BL\bin\Debug\DA.dll
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestionAero\BL\bin\Debug\BE.pdb
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestionAero\BL\bin\Debug\DA.pdb
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestionAero\BL\obj\Debug\BL.dll
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestionAero\BL\obj\Debug\BL.pdb
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestion\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestion\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestion\BL\obj\Debug\BL.dll
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestion\BL\obj\Debug\BL.pdb
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestion\BL\bin\Debug\BL.dll
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestion\BL\bin\Debug\BL.pdb
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestion\BL\bin\Debug\BE.dll
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestion\BL\bin\Debug\DA.dll
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestion\BL\bin\Debug\BE.pdb
+D:\Proware Air\Proyecto Proware\Codigo fuente\appGestion\BL\bin\Debug\DA.pdb

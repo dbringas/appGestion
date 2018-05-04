@@ -1,0 +1,79 @@
+﻿@model webApp.Models.RegistroViewModels
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="@Url.Content("~/faviconGear.ico")" />
+    <title>PROWARE | Login</title>
+    <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/animate/animate.css" rel="stylesheet">
+    <link href="~/Content/style.css" rel="stylesheet">
+    @Styles.Render("~/font-awesome/css")
+    <script src="~/Scripts/jquery/jquery-1.11.1.min.js"></script>
+</head>
+<body class="gray-bg">
+    <div class="middle-box text-center loginscreen animated fadeInDown">
+        <div>
+            @using (Html.BeginForm("Registro", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                <h4>Crear una nueva cuenta</h4>
+                <hr />
+                @Html.ValidationSummary(true)
+                <div class="form-group">
+                    <div class="col-md-12">
+                        @Html.LabelFor(m => m.nombre, new { @class = "control-label" })
+                        <div class="input-group m-b"><span class="input-group-addon"><i class="fa fa-user"></i></span> @Html.TextBoxFor(m => m.nombre, new { @class = "form-control" })</div>
+                        @Html.ValidationMessageFor(m => m.nombre)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        @Html.LabelFor(m => m.empresa, new { @class = "control-label" })
+                        <div class="input-group m-b"><span class="input-group-addon"><i class="fa fa-building"></i></span> @Html.TextBoxFor(m => m.empresa, new { @class = "form-control" })</div>
+                        @Html.ValidationMessageFor(m => m.empresa)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        @Html.LabelFor(m => m.correo, new { @class = "control-label" })
+                        <div class="input-group m-b"><span class="input-group-addon"><i class="fa fa-at"></i></span> @Html.TextBoxFor(m => m.correo, new { @class = "form-control" })</div>
+                        @Html.ValidationMessageFor(m => m.correo)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        @Html.LabelFor(m => m.confirmarCorreo, new { @class = "control-label" })
+                        <div class="input-group m-b"><span class="input-group-addon"><i class="fa fa-at"></i></span> @Html.TextBoxFor(m => m.confirmarCorreo, new { @class = "form-control" })</div>
+                        @Html.ValidationMessageFor(m => m.confirmarCorreo)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        @Html.LabelFor(m => m.clave, new { @class = "control-label" })
+                        <div class="input-group m-b"><span class="input-group-addon"><i class="fa fa-key"></i></span> @Html.PasswordFor(m => m.clave, new { @class = "form-control" })</div>
+                        @Html.ValidationMessageFor(m => m.clave)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        @Html.LabelFor(m => m.confirmarClave, new { @class = "control-label" })
+                        <div class="input-group m-b"><span class="input-group-addon"><i class="fa fa-key"></i></span> @Html.PasswordFor(m => m.confirmarClave, new { @class = "form-control" })</div>
+                        @Html.ValidationMessageFor(m => m.confirmarClave)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-1 col-md-10">
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-user-plus"></i>&nbsp;&nbsp;Crear cuenta</button>
+                        <button type="button" class="btn btn-danger" onclick="@("window.location.href='" + @Url.Action("Login", "Account") + "'");"><i class="fa fa-undo"></i>&nbsp;Retornar</button>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>

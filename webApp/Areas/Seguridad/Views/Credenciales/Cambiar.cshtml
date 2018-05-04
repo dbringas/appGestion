@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Cambiar credenciales";
+}
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>@ViewBag.Title</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="@Url.Action("Index", "Home", new { Area = "" })">Inicio</a>
+            </li>
+            <li>
+                <a>Seguridad</a>
+            </li>
+            <li class="active">
+                <strong>Cambiar</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Cambiar contraseña de acceso <small></small></h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <p>
+                                <button class="btn btn-white" type="button"><i class="fa fa-ban"></i>&nbsp;&nbsp;Cancelar</button>
+                                <button class="btn btn-primary" type="button"><i class="fa fa-save"></i>&nbsp;&nbsp;Guardar cambios</button>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Contraseña actual</label>
+                                <input type="password" placeholder="" class="ctrlInput" id="txtActual" />
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Nueva contraseña</label>
+                                <input type="password" placeholder="" class="ctrlInput" id="txtNueva" />
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Confirmar contraseña</label>
+                                <input type="password" placeholder="" class="ctrlInput" id="txtConfirmar" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
